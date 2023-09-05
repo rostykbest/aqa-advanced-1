@@ -1,4 +1,4 @@
-let averageGrade = 91;
+const averageGrade = 91;
 
 if (averageGrade <= 60) {
   console.log("Незадовільно");
