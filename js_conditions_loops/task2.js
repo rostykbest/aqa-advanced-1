@@ -1,4 +1,4 @@
-let averageGrade = 91;
+const averageGrade = 91;
 
 switch (true) {
   case averageGrade <= 60:
