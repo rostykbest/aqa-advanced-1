@@ -1,8 +1,7 @@
-function recFunc(num) {
+function numDecreaser(num) {
   console.log(num);
-  if (num <= 0) {
-    return;
+  if (num > 1) {
+    return numDecreaser(num - 1);
   }
-  recFunc(--num);
 }
-recFunc(5);
+numDecreaser(5);
