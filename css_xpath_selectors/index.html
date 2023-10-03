@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample HTML</title>
+</head>
+<body>
+<h2>Welcome to XPath Practice</h1>
+    <h2>Enjoy your practice!</h1>
+
+        <ul id="fruits">
+            <li class="fruit">Apple</li>
+            <li class="fruit">Banana</li>
+            <li class="fruit">Cherry</li>
+        </ul>
+
+        <div id="colors">
+            <span class="color">Red</span>
+            <span class="color">Green</span>
+            <span class="color">Blue</span>
+        </div>
+
+        <table id="students">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>22</td>
+            </tr>
+        </table>
+
+        <a href="https://www.example.com">Visit Example.com</a>
+
+        <p>Sample Paragraph</p>
+</body>
+</html>
+
+	1.Select the first <h2> element:
+
+
+CSS Selector:
+
+h2:first-of-type
+
+
+XPath Selector:
+
+//h2[1]
+
+
+	2. Select all list items under the <ul> element with the id "fruits":
+
+
+CSS Selector:
+
+ul#fruits li
+
+
+XPath Selector:
+
+//ul[@id='fruits']/li
+
+
+	3. Select the second <span> element with the class "color" under the <div> with the id "colors":
+
+
+CSS Selector:
+
+div#colors span.color:nth-of-type(2)
+
+
+XPath Selector:
+
+//div[@id='colors']//span[@class='color'][2]
+
+
+	4. Select the cell with age of the student named "Alice":
+
+
+CSS Selector:
+
+table#students tr:nth-child(3) td:nth-child(2)
+
+
+XPath Selector:
+
+//table[@id='students']//tr[3]//td[2]
